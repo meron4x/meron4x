@@ -1,46 +1,47 @@
 body {
-    margin: auto;
     text-align: center;
     padding: 0;
+    margin:auto ;
     font-size :larger;
-    font-family : arial;
-    color: rgb(54, 37, 37);
-    background-color: #ffffff;}
+    opacity:0.75;
+    font-family: 'Montserrat';
+    max-width : 1000px;
+    color: #65FBD2;
+    background-image: url("/clouds.jpg");
+    background-size:cover;}
 
-p {
+p { color: #ffffff;
         width: 80%;
-        margin: auto;}
+        margin: auto;
+    opacity: 1;}
 
+.titleProffesion{
+    font-style: italic;
+}
 header{
     align-content: center;
     margin-top: 0vh;
     margin-bottom: 1vh;
-    height: 40px;
-    box-shadow: 0px 10px 20px 10px rgb(80, 80, 80);
+    height: 40px;;
     }
-
-
 nav {
-    position: fixed;
-    top: 0;
     color: white;
-    margin: auto;
+    font-family: 'Montserrat';
     width : 100%;
     height : 100%;;
-
    }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color:rgb(80, 80, 80)}
+    overflow: hidden;}
 
 li {
-    float: right;}
+    float: right;
+    font-weight: bold;}
 
-li a {
+a {
     display: block;
     color: white;
     text-align: center;
@@ -48,20 +49,59 @@ li a {
     text-decoration: none;}
 
 nav >ul >li:hover {
-    background-color: rgb(179, 172, 172);}
+    border-bottom: 2px solid #FFFFFF;
+    font-style: italic;
+}
 
 hr { width : 90%;
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);}
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+}
 
 
 .profilePic   {
         height: 15vh;
-        border: 1px solid white;
         border-radius: 55%;
         margin-bottom: 1.3vh;
         margin-top: 2vh;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
+        box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 
     }
+
+
+.middlediv {
+    height : fit-content;
+    margin : auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+ /* how thou*/
+.middleinstances{
+    height: 100%;
+    width: 100%;
+    margin : 0;
+    padding : 0;
+    z-index:1;
+    margin-bottom: 8%;
+}
+.middleinstancecoverimages {
+    width: 100%;
+    height:100% ;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    transition: 0.09s;
+    transition-timing-function: ease-in-out;
+}
+.middleinstancecoverimages:hover{
+    width: 101%;
+    z-index:1;
+    opacity: 1;
+}
 
 main {
     margin-bottom: 1vh;
@@ -88,5 +128,8 @@ main {
     margin-top: 2vh;
     margin-bottom: 2vh;
     bottom: 0;
-    width: 100%;
-    background-color: white;}
+    width: 100%;}
+
+@media only screen and (min-width: 768px) {
+
+}
